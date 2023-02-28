@@ -268,6 +268,14 @@ export function decorateSections(main) {
         if (key === 'style') {
           const styles = meta.style.split(',').map((style) => toClassName(style.trim()));
           styles.forEach((style) => section.classList.add(style));
+
+        } else if (key === 'background') {
+          // extract for background pic
+          const pic = sectionMeta.querySelector('picture');
+          if (pic) {
+            section.append(pic);
+          }
+
         } else {
           section.dataset[toCamelCase(key)] = meta[key];
         }
