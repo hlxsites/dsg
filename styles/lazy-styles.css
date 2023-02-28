@@ -1,7 +1,6 @@
 /* below the fold CSS goes here */
 @font-face {
     font-family: 'DSG Sans';
-    font-display: swap;
     url('fonts/DSGSans-Black.woff') format('woff');
     font-style:   normal;
     font-weight:  700;
@@ -9,7 +8,6 @@
 
 @font-face {
     font-family: 'DSG Sans';
-    font-display: swap;
     url('fonts/DSGSans-Medium.woff') format('woff');
     font-style:   normal;
     font-weight: 400;
@@ -17,7 +15,6 @@
 
 @font-face {
     font-family: 'DSG Sans Black';
-    font-display: swap;
     url('fonts/DSGSans-Black.woff') format('woff');
     font-style:   normal;
     font-weight:  400;
@@ -25,7 +22,6 @@
 
 @font-face {
     font-family: 'DSG Sans Bold';
-    font-display: swap;
     url('fonts/DSGSans-Bold.woff') format('woff');
     font-style:   normal;
     font-weight:  700;
@@ -33,7 +29,6 @@
 
 @font-face {
     font-family: 'Archivo';
-    font-display: swap;
     font-style: normal;
     font-weight: 400;
     url('fonts/Archivo-Regular.ttf') format('truetype');
@@ -41,7 +36,6 @@
 
 @font-face {
     font-family: 'Archivo';
-    font-display: swap;
     font-style: normal;
     font-weight: 700;
     url('fonts/Archivo-Bold.ttf') format('truetype');
@@ -49,7 +43,6 @@
 
 @font-face {
     font-family: 'Archivo Black';
-    font-display: swap;
     font-style: normal;
     font-weight: 400;
 url('fonts/Archivo-Black.ttf') format('truetype');

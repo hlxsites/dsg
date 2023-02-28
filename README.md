@@ -1,5 +1,5 @@
 # Dick's Sporting Goods demo
-https://www.dickssportinggoods.com/s/dsg-brand-clothing-gear
+https://www.dickssportinggoods.com/s/baseball-softball-services
 
 ## Environments
 - Preview: https://main--{repo}--{owner}.hlx.page/
