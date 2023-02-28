@@ -21,7 +21,7 @@
   --text-color: #191f1c;
 
   /* fonts */
-  --body-font-family: 'Archivo', Arial, sans-serif;--font-family-secondary: 'DSG Sans Black', sans-serif;
+  --body-font-family: 'Archivo', arial, sans-serif;--font-family-secondary: 'DSG Sans Black', sans-serif;
   --heading-font-family: var(--body-font-family);
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
@@ -219,7 +219,6 @@ main img {
   :root {
     --heading-font-size-xxl: 60px;
     --heading-font-size-xl: 48px;
-
     --heading-font-size-m: 30px;
     --heading-font-size-s: 24px;
     --heading-font-size-xs: 22px;
