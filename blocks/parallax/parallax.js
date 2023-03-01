@@ -32,7 +32,7 @@ export default async function decorate(block) {
   if (window.innerWidth < 900) {
     parallaxBlock.style.backgroundImage = `url(${mobileImage})`;
     multiplier = 0.2;
-}
+  }
 
   block.textContent = '';
   block.append(parallaxBlock);
