@@ -21,7 +21,8 @@
   --text-color: #191f1c;
 
   /* fonts */
-  --body-font-family: 'Archivo', arial, sans-serif;--font-family-secondary: 'DSG Sans Black', sans-serif;
+  --body-font-family: 'Archivo', arial, sans-serif;
+   --font-family-secondary: 'DSG Sans Black', sans-serif;
   --heading-font-family: var(--body-font-family);
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
@@ -243,29 +244,4 @@ main .section.highlight {
 .store-links a {
 font-size: var(--body-font-size-xxs);
 align-items: normal;
-}
-
-main .section.background {
-  height: 600px;
-  box-sizing: border-box;
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  color: #fff;
-  padding: 0;
-}
-
-main .section.background > picture {
-  position: fixed;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-
-main .section.background > picture img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
 }
