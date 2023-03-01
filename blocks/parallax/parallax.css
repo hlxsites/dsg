@@ -22,6 +22,7 @@ main .parallax-background > div {
     text-align: center;
     width: 550px;
     float: right;
+
 }
 main .parallax-background h2 {
     font-family: var(--font-family-secondary);
