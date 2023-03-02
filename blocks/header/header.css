@@ -16,7 +16,6 @@ header nav {
   margin: auto;
   max-width: 100%;
   height: var(--nav-height);
-
   font-family: var(--body-font-family);
 }
 
@@ -28,12 +27,6 @@ header nav[aria-expanded=true] {
   'ubermenu ubermenu' 1fr;
   overflow-y: auto;
   min-height: 100vh;
-}
-
-@media (min-width: 600px) {
-  header nav {
-
-  }
 }
 
 @media (min-width: 900px) {

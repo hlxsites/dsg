@@ -9,7 +9,6 @@ main .parallax-background {
     width: 100%;
     height: auto;
     padding: 20px 0;
-    /* at 1600 width, -250px is good */
     background-position-x: center;
     background-position-y: -200px;
 }
@@ -35,7 +34,6 @@ main .parallax-background h2 {
         width: 100%;
         height: auto;
         padding: 20px 0;
-        /* at 1600 width, -250px is good */
         background-position-x: center;
         background-position-y: -200px;
     }
