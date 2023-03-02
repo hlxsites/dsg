@@ -5,7 +5,8 @@
 function parallax(block, multiplier = 0.4) {
   window.addEventListener('scroll', () => {
     const offset = window.scrollY;
-    /* The number of pixels subtracted here should match the negative number of pixels in the CSS to avoid a jump upon scrolling */
+    /* The number of pixels subtracted here should match the negative
+     * number of pixels in the CSS to avoid a jump upon scrolling */
     block.style.backgroundPositionY = `${offset * multiplier - 200}px`;
   });
 }
