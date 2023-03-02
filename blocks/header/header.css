@@ -226,7 +226,6 @@ header nav .nav-sections ul > li > ul > li {
     transform: rotate(135deg);
     width: 6px;
     height: 6px;
-    border: 2px solid currentcolor;
     border-radius: 0 1px 0 0;
     border-width: 2px 2px 0 0;
   }
@@ -310,11 +309,11 @@ header nav .nav-ubermenu {
   grid-area: ubermenu;
   display: flex;
   justify-content: space-around;
-padding: 18px 0;
+  padding: 18px 0;
   margin: 10px 0;
- border-top: 1px solid;
+  border-top: 1px solid;
   border-bottom: 1px solid;
-border-color: var(--overlay-background-color);
+  border-color: var(--overlay-background-color);
   font-size: var(--body-font-size-xs);
 }
 
@@ -325,6 +324,6 @@ header nav .nav-ubermenu a {
 }
 
 header nav .nav-ubermenu a:hover {
-border-bottom: #bb5811 7px solid;
+  border-bottom: #bb5811 7px solid;
   font-weight: 700;
 }
