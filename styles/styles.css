@@ -79,18 +79,19 @@ h1 {
   letter-spacing: 0.05rem;
   text-transform: uppercase;
 }
+
 h2 {
   font-size: var(--heading-font-size-xl);
   font-family: var(--font-family-secondary);
-
 }
+
 h3 {
   font-family: var(--body-font-family);
   font-size: var(--heading-font-size-s);
   margin-top: 0;
   line-height: 1;
-
 }
+
 h4 { font-size: var(--heading-font-size-m) }
 h5 { font-size: var(--heading-font-size-s) }
 h6 { font-size: var(--heading-font-size-xs) }
@@ -254,12 +255,6 @@ main .section.highlight {
   background-color: var(--highlight-background-color);
 }
 
-.store-links a:link {
-  font-size: var(--body-font-size-xxs);
-  align-items: normal;
-  text-decoration: none;
-}
-
 p > a:link {
   text-decoration: underline;
 }
@@ -271,4 +266,10 @@ main .title p, main .title a {
 
 main .section.title {
   padding: 25px;
+}
+
+.store-links a:link {
+  font-size: var(--body-font-size-xxs);
+  align-items: normal;
+  text-decoration: none;
 }

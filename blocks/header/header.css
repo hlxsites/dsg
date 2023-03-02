@@ -1,4 +1,4 @@
-/* header and nav layout */
+/* stylelint-disable no-descending-specificity */
 header .nav-wrapper {
   background-color: var(--background-color);
   width: 100%;
@@ -169,6 +169,7 @@ header nav .nav-sections {
   font-size: var(--body-font-size-xxs);
   padding: 10px;
 }
+
 header nav .nav-sections p a{
   text-decoration: unset;
 }

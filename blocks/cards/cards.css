@@ -10,6 +10,7 @@
 .cards h2 {
     font-size: var(--heading-font-size-l);
 }
+
 .services-3 .cards > ul {
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 }
@@ -33,7 +34,6 @@
 
 .cards > ul > li img {
     width: 100%;
-
     object-fit: cover;
 }
 
@@ -48,6 +48,7 @@
 .circles .cards-wrapper {
     padding-top: 50px;
 }
+
 .circles h3 {
     font-weight: normal;
     color: #006554;
