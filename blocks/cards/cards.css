@@ -48,7 +48,7 @@
     padding-top: 10px;
 }
 
-.resources .cards-card-image, .resources .cards-card-image a:link {
+.resources .cards-card-image, .resources .cards-card-image a:link, .resources .cards-card-image a:visited {
     background-color: #006554;
     color: white;
 }
