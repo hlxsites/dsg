@@ -14,7 +14,7 @@ main .parallax-background {
 }
 
 main .parallax-background > div {
-    background-color: var(--text-color);
+    background-color: rgba(0,0,0,0.6);
     color: var(--background-color);
     padding: 0 20px;
     text-align: center;
