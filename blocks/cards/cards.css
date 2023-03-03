@@ -11,13 +11,22 @@
     font-size: var(--heading-font-size-l);
 }
 
-.services-3 .cards > ul {
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-}
-
 .cards > ul > li {
     border: 1px solid var(--highlight-background-color);
     background-color: var(--background-color)
+}
+
+.resources > ul {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+.resources .cards-card-image, .resources .cards-card-image a:link, .resources .cards-card-image a:visited {
+    background-color: #006554;
+    color: white;
+}
+
+.services-3 .cards > ul {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 }
 
 .cards .cards-card-body {
@@ -46,13 +55,4 @@
 
 .circles figcaption {
     padding-top: 10px;
-}
-
-.resources .cards-card-image, .resources .cards-card-image a:link, .resources .cards-card-image a:visited {
-    background-color: #006554;
-    color: white;
-}
-
-.resources > ul {
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 }
