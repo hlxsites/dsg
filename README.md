@@ -33,4 +33,6 @@ npm tst
 5. Edit footer.doc, replace boilerplate info with what I pasted in from the live site
 6. Edit nav.doc, replace with all seen in the live site. This navigation is exceptionally large, so I am typing out some placeholder notes, and creating lots of sections as I go along.
 7. Take inventory of live site fonts, font sizes, breakpoints, etc and create the base CSS
-8. Create needed blocks to support the content structure
+8. create root-level metatdata sheet to have global metadata and to assign templates or themes
+9. Create needed blocks to support the content structure
+10. Create 'fragments' -- content that will be reused, but needs to be authored -- such as "This month's specials". 
