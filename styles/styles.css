@@ -257,10 +257,6 @@ main .section.highlight {
   background-color: var(--highlight-background-color);
 }
 
-p > a:link {
-  text-decoration: underline;
-}
-
 .section.title {
   padding: 25px;
 }
@@ -283,6 +279,10 @@ p > a:link {
 
 .title li:last-child {
   border-right: none;
+}
+
+p > a:link {
+  text-decoration: underline;
 }
 
 .store-links p a:link {
