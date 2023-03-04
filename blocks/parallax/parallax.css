@@ -5,6 +5,7 @@ main .parallax-container {
 
 main .parallax-background {
     overflow: hidden;
+    background-color: var(--ticker-color);
     background-size: 100%;
     width: 100%;
     height: auto;

@@ -2,8 +2,8 @@
 https://www.dickssportinggoods.com/s/baseball-softball-services
 
 ## Environments
-- Preview: https://main--{repo}--{owner}.hlx.page/
-- Live: https://main--{repo}--{owner}.hlx.live/
+- Preview: https://main--dsg--hlxsites.hlx.page/
+- Live: https://main--dsg--hlxsites.hlx.live/
 
 ## Installation
 
