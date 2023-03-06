@@ -94,7 +94,7 @@
 }
 
 .half-dark .columns > div div:nth-child(2) p a {
-color:  var(--background-color);
+    color: var(--background-color);
 }
 
 .center {
