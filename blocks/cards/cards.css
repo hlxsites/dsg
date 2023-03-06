@@ -71,7 +71,7 @@
     padding: 16px;
 }
 
-.services-3 .cards-card-image picture img, .services-3 .cards-card-body picture img {
+.services-3 .cards-card-image img, .services-3 .cards-card-body img {
     position: absolute;
     top: 0;
     left: 0;
