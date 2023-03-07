@@ -168,8 +168,7 @@ Can be px or %, but watch for scrollbars appearing when x is over 200%.
     opacity: 1;
     transform: translate3d(80%, -10%, 0) scale(1) rotate(0deg);
     pointer-events: none;
-   /* transition: transform 400ms ease, opacity 200ms 150ms ease; */
-  transition: transform 400ms 200ms ease, opacity 200ms 100ms ease;
+    transition: transform 400ms 200ms ease, opacity 200ms 100ms ease;
 }
 
 .resources li:hover .cards-card-image:nth-child(2) > picture:last-of-type img {
