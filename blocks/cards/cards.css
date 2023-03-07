@@ -175,6 +175,5 @@ Can be px or %, but watch for scrollbars appearing when x is over 200%.
     opacity: 1;
     transform: translate3d(210%, 0, 0) scale(.9) rotate(20deg);
     pointer-events: none;
-    /* transition: transform 400ms ease, opacity 200ms 150ms ease; */
     transition: transform 800ms 200ms ease, opacity 200ms 400ms ease;
 }
