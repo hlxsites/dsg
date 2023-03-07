@@ -90,6 +90,10 @@
     padding: 40px;
 }
 
+.resources .cards-card-image {
+    padding: 10px;
+}
+
 .services-3 li:hover .cards-card-image {
     transform: rotateY(-180deg);
 }
@@ -127,10 +131,6 @@
 
 .resources {
     padding-top: 40px;
-}
-
-.resources .cards-card-image {
-    padding: 10px;
 }
 
 .resources ul {
