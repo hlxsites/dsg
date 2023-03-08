@@ -302,6 +302,7 @@ header nav .nav-tools ul .icon svg {
 header nav .nav-tools ul:nth-child(2) {
   flex: 2;
 }
+
 header nav .nav-tools ul:nth-child(2) > li {
   border-radius: 30px;
   border: 1px solid var(--overlay-background-color);
