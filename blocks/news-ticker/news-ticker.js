@@ -61,7 +61,7 @@ export class Carousel {
     currentItem.classList.add('animated');
     nextItem.style.transform = 'translateX(0)';
     currentItem.style.transform = reverse ? 'translateX(100%)' : 'translateX(-100%)';
- }
+  }
 
   changeShowingItem(nextItemIndex, reverse = false) {
     this.items.forEach((elem) => elem.classList.remove('animated'));
@@ -82,8 +82,8 @@ export class Carousel {
     setTimeout(() => this.playAnimation(currentItem, nextItem, reverse), 20);
 
     setTimeout(() => {
-        attachCurrentDrag();
-        attachNextDrag();
+      attachCurrentDrag();
+      attachNextDrag();
     }, animationTime);
 
     this.currentItemIndex = nextItemIndex;
@@ -120,9 +120,9 @@ export class Carousel {
     this.items.forEach((item) => {
       this.itemDragListeners.push(makeScrollableWithDrag(item, (offset) => {
         if (offset < -20) {
-            this.showNext();
+          this.showNext();
         } else if (offset > 20) {
-            this.showPrevious();
+          this.showPrevious();
         }
       }));
     });
@@ -140,12 +140,6 @@ export class Carousel {
 
 export default async function decorate(block) {
   const carousel = new Carousel(Array.from(block.children));
-
-  // Add buttons to entries with modal
-  Array.from(block.children).forEach((promotion) => {
-      promotion.children.length < 2
-      || !promotion.children[1].hasChildNodes()
-});
 
 carousel.init();
 }
