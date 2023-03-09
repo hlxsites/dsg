@@ -140,6 +140,5 @@ export class Carousel {
 
 export default async function decorate(block) {
   const carousel = new Carousel(Array.from(block.children));
-
-carousel.init();
+  carousel.init();
 }
