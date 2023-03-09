@@ -3,25 +3,25 @@ const animationTime = 500; // animation time of .promo-banner > div.animated in 
 
 // Scroll between banner pages by dragging
 function makeScrollableWithDrag(item, end) {
-let startPosition;
-item.style.cursor = 'grab';
-item.style['user-select'] = 'none';
+  let startPosition;
+  item.style.cursor = 'grab';
+  item.style['user-select'] = 'none';
 
-function mouseMove(e) {
+  function mouseMove(e) {
     const offset = e.pageX - startPosition;
     item.style.transform = `translateX(${offset}px)`;
-}
+  }
 
-function mouseUp(e) {
+  function mouseUp(e) {
     const offset = e.pageX - startPosition;
     document.removeEventListener('mousemove', mouseMove);
     document.removeEventListener('mouseup', mouseUp);
     document.removeEventListener('touchmove', mouseMove);
     document.removeEventListener('touchend', mouseUp);
     end(offset);
-}
+  }
 
-function mouseDown(e) {
+  function mouseDown(e) {
     item.classList.remove('animated');
 
     startPosition = e.pageX;
@@ -29,41 +29,41 @@ function mouseDown(e) {
     document.addEventListener('mouseup', mouseUp);
     document.addEventListener('touchmove', mouseMove, { passive: true });
     document.addEventListener('touchend', mouseUp, { passive: true });
-}
+  }
 
-function reAttachListener() {
+  function reAttachListener() {
     item.addEventListener('mousedown', mouseDown);
     item.addEventListener('touchstart', mouseDown, { passive: true });
-}
+  }
 
-function removeListener() {
+  function removeListener() {
     item.removeEventListener('mousedown', mouseDown);
     item.removeEventListener('touchstart', mouseDown);
-}
+  }
 
-reAttachListener();
+  reAttachListener();
 
-return [removeListener, reAttachListener];
+  return [removeListener, reAttachListener];
 }
 
 export class Carousel {
-constructor(items) {
+  constructor(items) {
     this.items = items;
     this.currentItemIndex = 0;
     this.totalItems = items.length;
     this.parent = items[0]?.parentElement;
     this.itemDragListeners = []; // Event listeners for dragging between pages
-}
+  }
 
-// eslint-disable-next-line class-methods-use-this
-playAnimation(currentItem, nextItem, reverse) {
+  // eslint-disable-next-line class-methods-use-this
+  playAnimation(currentItem, nextItem, reverse) {
     nextItem.classList.add('animated');
     currentItem.classList.add('animated');
     nextItem.style.transform = 'translateX(0)';
     currentItem.style.transform = reverse ? 'translateX(100%)' : 'translateX(-100%)';
-}
+ }
 
-changeShowingItem(nextItemIndex, reverse = false) {
+  changeShowingItem(nextItemIndex, reverse = false) {
     this.items.forEach((elem) => elem.classList.remove('animated'));
 
     const nextItem = this.items[nextItemIndex];
@@ -87,67 +87,64 @@ changeShowingItem(nextItemIndex, reverse = false) {
     }, animationTime);
 
     this.currentItemIndex = nextItemIndex;
-}
+  }
 
-showPrevious() {
+  showPrevious() {
     const nextItemIndex = (this.currentItemIndex + this.totalItems - 1) % this.totalItems;
 
     this.changeShowingItem(nextItemIndex, true);
-}
+  }
 
-showNext() {
+  showNext() {
     const nextItemIndex = (this.currentItemIndex + this.totalItems + 1) % this.totalItems;
 
     this.changeShowingItem(nextItemIndex, false);
-}
+  }
 
-init() {
+  init() {
     this.parent.setAttribute('tabindex', '0');
     this.parent.addEventListener('focus', () => {
-        this.stop();
+      this.stop();
     });
     this.parent.addEventListener('blur', () => {
-        this.start();
+      this.start();
     });
     this.parent.addEventListener('keydown', (e) => {
-        if (e.keyCode === 39 /* Arrow Right */) {
-            this.showNext();
-        }
-        if (e.keyCode === 37 /* Arrow Left */) {
-            this.showPrevious();
-        }
+      if (e.keyCode === 39 /* Arrow Right */) {
+        this.showNext();
+      }
+      if (e.keyCode === 37 /* Arrow Left */) {
+        this.showPrevious();
+      }
     });
     this.items.forEach((item) => {
-        this.itemDragListeners.push(makeScrollableWithDrag(item, (offset) => {
-            if (offset < -20) {
-                this.showNext();
-            } else if (offset > 20) {
-                this.showPrevious();
-            }
-        }));
+      this.itemDragListeners.push(makeScrollableWithDrag(item, (offset) => {
+        if (offset < -20) {
+            this.showNext();
+        } else if (offset > 20) {
+            this.showPrevious();
+        }
+      }));
     });
     this.start();
-}
+  }
 
-start() {
+  start() {
     this.interval = setInterval(() => this.showNext(), 3000);
-}
+  }
 
-stop() {
+  stop() {
     clearInterval(this.interval);
-}
+  }
 }
 
 export default async function decorate(block) {
-const carousel = new Carousel(Array.from(block.children));
+  const carousel = new Carousel(Array.from(block.children));
 
-// Add buttons to entries with modal
-Array.from(block.children).forEach((promotion) => {
-    if (
-        promotion.children.length < 2
-        || !promotion.children[1].hasChildNodes()
-    ) {
-    }
+  // Add buttons to entries with modal
+  Array.from(block.children).forEach((promotion) => {
+      promotion.children.length < 2
+      || !promotion.children[1].hasChildNodes()
 });
 
 carousel.init();
