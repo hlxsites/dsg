@@ -27,7 +27,6 @@
 width: 100%;
     height: 100%;
   position: absolute;
-
     z-index: 100;
     display: flex;
     justify-content: center;
@@ -55,10 +54,4 @@ width: 100%;
     text-transform: uppercase;
     border-radius: 0;
     padding: 9px 15px;
-}
-
-@media (min-width: 768px) {
-    .news-ticker > div {
-
-    }
 }
