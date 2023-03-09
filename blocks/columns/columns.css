@@ -17,10 +17,6 @@ main .columns-container {
     margin: 0;
 }
 
-.store-links {
-    padding-bottom: 40px;
-}
-
 .icons-text {
     margin-bottom: 15px;
 }
@@ -151,6 +147,7 @@ main .columns-container {
 }
 
 .store-links {
+   padding-bottom: 40px;
    text-align: center;
 }
 

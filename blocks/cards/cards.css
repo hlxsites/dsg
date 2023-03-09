@@ -192,6 +192,10 @@ Can be px or %, but watch for scrollbars appearing when x is over 200%.
         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     }
 
+    .resources ul {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+
     .cards.circles > ul {
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         grid-gap: 30px;
@@ -199,9 +203,5 @@ Can be px or %, but watch for scrollbars appearing when x is over 200%.
 
     .cards.circles figure {
         margin-inline: unset;
-    }
-
-    .resources ul {
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     }
 }
