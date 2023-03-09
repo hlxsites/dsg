@@ -147,7 +147,6 @@ Array.from(block.children).forEach((promotion) => {
         promotion.children.length < 2
         || !promotion.children[1].hasChildNodes()
     ) {
-        return;
     }
 });
 
